@@ -1,0 +1,116 @@
+/*!
+ * Copyright (c) 2017, Hugo Freire <hugo@afrag.st>.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE.md file in the root directory of this source tree.
+ */
+@import './colors.scss';
+@import '../../../node_modules/@angular/material/_theming';
+
+@include mat-core();
+
+$app-primary-color: (
+        50: #fce4ec,
+        100: $primary-color,
+        200: $primary-color,
+        300: $primary-color,
+        400: $primary-color,
+        500: $primary-color,
+        600: $primary-color,
+        700: $primary-color,
+        800: $primary-color,
+        900: $primary-color,
+        A100: $primary-color,
+        A200: $primary-color,
+        A400: $primary-color,
+        A700: $primary-color,
+        contrast: (
+                50: $black-87-opacity,
+                100: $black-87-opacity,
+                200: $black-87-opacity,
+                300: $black-87-opacity,
+                400: $black-87-opacity,
+                500: white,
+                600: white,
+                700: $white-87-opacity,
+                800: $white-87-opacity,
+                900: $white-87-opacity,
+                A100: $black-87-opacity,
+                A200: white,
+                A400: white,
+                A700: white,
+        )
+);
+
+$app-secondary-color: (
+        50: #fce4ec,
+        100: $secondary-color,
+        200: $secondary-color,
+        300: $secondary-color,
+        400: $secondary-color,
+        500: $secondary-color,
+        600: $secondary-color,
+        700: $secondary-color,
+        800: $secondary-color,
+        900: $secondary-color,
+        A100: $secondary-color,
+        A200: $secondary-color,
+        A400: $secondary-color,
+        A700: $secondary-color,
+        contrast: (
+                50: $black-87-opacity,
+                100: $black-87-opacity,
+                200: $black-87-opacity,
+                300: $black-87-opacity,
+                400: $black-87-opacity,
+                500: white,
+                600: white,
+                700: $white-87-opacity,
+                800: $white-87-opacity,
+                900: $white-87-opacity,
+                A100: $black-87-opacity,
+                A200: white,
+                A400: white,
+                A700: white,
+        )
+);
+
+$app-terciary-color: (
+        50: #fce4ec,
+        100: $terciary-color,
+        200: $terciary-color,
+        300: $terciary-color,
+        400: $terciary-color,
+        500: $terciary-color,
+        600: $terciary-color,
+        700: $terciary-color,
+        800: $terciary-color,
+        900: $terciary-color,
+        A100: $terciary-color,
+        A200: $terciary-color,
+        A400: $terciary-color,
+        A700: $terciary-color,
+        contrast: (
+                50: $black-87-opacity,
+                100: $black-87-opacity,
+                200: $black-87-opacity,
+                300: $black-87-opacity,
+                400: $black-87-opacity,
+                500: white,
+                600: white,
+                700: $white-87-opacity,
+                800: $white-87-opacity,
+                900: $white-87-opacity,
+                A100: $black-87-opacity,
+                A200: white,
+                A400: white,
+                A700: white,
+        )
+);
+
+$app-primary: mat-palette($app-primary-color);
+$app-accent: mat-palette($app-secondary-color);
+$app-warn: mat-palette($app-terciary-color);
+
+$app-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
+@include angular-material-theme($app-theme);

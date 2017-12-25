@@ -1,0 +1,52 @@
+<!--
+  ~ Copyright (c) 2017, Hugo Freire <hugo@afrag.st>.
+  ~
+  ~ This source code is licensed under the license found in the
+  ~ LICENSE.md file in the root directory of this source tree.
+  -->
+
+<div id="talk-dialog">
+  <h1 mat-dialog-title>Talk to a human</h1>
+
+  <mat-horizontal-stepper linear>
+    <mat-step [stepControl]="form">
+      <mat-dialog-content>
+        <form [formGroup]="form">
+          <mat-form-field>
+            <mat-label>Your e-mail address</mat-label>
+            <input matInput placeholder="john@gmail.com" [formControl]="email" required>
+            <mat-error *ngIf="form.invalid">{{getEmailErrorMessage()}}</mat-error>
+          </mat-form-field>
+        </form>
+      </mat-dialog-content>
+
+      <mat-dialog-actions>
+        <button mat-raised-button color="primary" matStepperNext>Next</button>
+      </mat-dialog-actions>
+    </mat-step>
+
+    <mat-step [stepControl]="isHuman">
+      <mat-dialog-content>
+        <re-captcha (resolved)="onCaptcha(!!$event)"></re-captcha>
+      </mat-dialog-content>
+
+      <mat-dialog-actions>
+        <button mat-button matStepperPrevious>Previous</button>
+        <button mat-raised-button color="primary" matStepperNext [disabled]="!isHuman"
+                (click)="onLastNextButtonClick()">
+          Next
+        </button>
+      </mat-dialog-actions>
+    </mat-step>
+
+    <mat-step>
+      <mat-dialog-content>
+        Finished
+      </mat-dialog-content>
+
+      <mat-dialog-actions>
+        <button mat-raised-button mat-dialog-close>Close</button>
+      </mat-dialog-actions>
+    </mat-step>
+  </mat-horizontal-stepper>
+</div>

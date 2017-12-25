@@ -1,0 +1,132 @@
+/*!
+ * Copyright (c) 2017, Hugo Freire <hugo@afrag.st>.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE.md file in the root directory of this source tree.
+ */
+@import './theme';
+
+#landing {
+  background-image: url('../images/hero.png');
+  background-size: cover;
+  background-position: center;
+
+  max-width: none;
+
+  height: 100vh;
+
+  text-align: center;
+
+  #header {
+    & a {
+      text-decoration: none;
+    }
+
+    & .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 60px;
+      margin-left: 8%;
+    }
+
+    & .logo-symbol {
+      display: block;
+      width: 65px;
+      height: 65px;
+      background-image: url(../images/logo.svg);
+      background-size: 100% 100%;
+      float: left;
+      margin-top: 5px;
+    }
+
+    & .logo-text {
+      line-height: 20px;
+      padding: 0px 10px 10px 1px;
+      color: white;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0;
+      font-size: 1.2em;
+      margin-bottom: 0;
+      word-wrap: break-word;
+      width: 150px;
+      text-align: left;
+    }
+  }
+
+  #hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+
+    & .pitch-text {
+      width: 90%;
+    }
+
+    & h1 {
+      color: white;
+      font-weight: 900;
+      letter-spacing: 0;
+      text-transform: uppercase;
+      font-size: 2.3em;
+      margin: 15px 0 35px 0;
+    }
+
+    & h2 {
+      letter-spacing: 1.5px;
+      color: $terciary-color;
+      font-size: 1.5em;
+      margin-bottom: 35px;
+    }
+
+    & h3 {
+      color: $secondary-color;
+      letter-spacing: 2px;
+      margin-bottom: 70px;
+      font-size: 1.1em;
+      line-height: 1.3;
+    }
+  }
+}
+
+@media (min-width: 40.0rem) {
+  #landing {
+    text-align: inherit;
+
+    #header {
+      & .logo {
+        justify-content: inherit;
+        margin-left: 4%;
+        margin-bottom: 20px;
+      }
+
+      & .logo-text {
+        margin-bottom: 0;
+      }
+    }
+
+    #hero {
+      height: 65%;
+
+      & .pitch-text {
+        width: 55%;
+      }
+
+      & h1 {
+        text-align: left;
+        margin: 15px 0;
+      }
+
+      & h2 {
+        margin-bottom: 10px;
+      }
+
+      & h3 {
+        margin: 15px 0 40px 0;
+      }
+    }
+  }
+}
