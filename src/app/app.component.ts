@@ -11,5 +11,4 @@ import { Component } from '@angular/core'
   selector: 'app',
   templateUrl: 'app.html'
 })
-export class AppComponent {
-}
+export class AppComponent {}

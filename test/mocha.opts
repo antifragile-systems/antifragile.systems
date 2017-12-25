@@ -1,1 +1,1 @@
---require ./test/mocha
+--require ./test/mocha.js

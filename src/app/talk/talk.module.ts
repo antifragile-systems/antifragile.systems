@@ -42,8 +42,8 @@ import { LeadService } from './lead.service'
     LeadService,
     {
       provide: RECAPTCHA_SETTINGS,
-      useValue: { siteKey: '6LfTPz4UAAAAAMbeCT3cvtxa-JK23EdvEJ4y6Apl' } as RecaptchaSettings,
-    },
+      useValue: { siteKey: '6LfTPz4UAAAAAMbeCT3cvtxa-JK23EdvEJ4y6Apl' } as RecaptchaSettings
+    }
   ]
 })
 export class TalkModule {}

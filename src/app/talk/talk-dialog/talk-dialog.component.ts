@@ -17,18 +17,18 @@ import { LeadService } from '../lead.service'
   selector: 'talk-dialog',
   templateUrl: 'talk-dialog.html',
   styles: [ 'talk-dialog.scss' ],
-  providers: [ LeadService ],
+  providers: [ LeadService ]
 })
 export class TalkDialogComponent {
-  constructor (public dialogRef: MatDialogRef<any>, private leadService: LeadService) {}
-
   private _form: FormGroup
+
+  private _isHuman: boolean = false
+
+  constructor (public dialogRef: MatDialogRef<any>, private leadService: LeadService) {}
 
   get form () {
     return this._form
   }
-
-  private _isHuman: boolean = false
 
   get isHuman () {
     return this._isHuman
@@ -57,6 +57,7 @@ export class TalkDialogComponent {
 
     this.leadService.add(lead)
       .subscribe(() => {
+        console.log('clicked')
       })
   }
 
