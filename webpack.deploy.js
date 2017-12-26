@@ -48,7 +48,7 @@ module.exports = webpackMerge(commonConfig, {
         Bucket: 'antifragile.systems'
       },
       cloudfrontInvalidateOptions: {
-        DistributionId: 'EXZHGHK65UYXC',
+        DistributionId: process.env.AWS_CLOUDFRONT_DISTRIBUTION_ID,
         Items: [ '/*' ]
       }
     })
