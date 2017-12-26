@@ -42,10 +42,10 @@ module.exports = webpackMerge(commonConfig, {
     }),
     new S3Plugin({
       s3Options: {
-        region: 'eu-west-1'
+        region: process.env.AWS_REGION
       },
       s3UploadOptions: {
-        Bucket: 'antifragile.systems'
+        Bucket: process.env.AWS_S3_BUCKET || 'antifragile.systems'
       },
       cloudfrontInvalidateOptions: {
         DistributionId: process.env.AWS_CLOUDFRONT_DISTRIBUTION_ID,

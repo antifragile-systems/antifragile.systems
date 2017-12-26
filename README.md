@@ -52,5 +52,9 @@ npm run deploy
 #### Available environment variables
 Variable | Description | Required | Default value
 :---:|:---:|:---:|:---:
-AWS_CLOUDFRONT_DISTRIBUTION_ID | The CloudFront distribution ID to be invalidated. | true | 'undefined'
+AWS_REGION | AWS region used for S3 and Rekognition. | true | `undefined`
+AWS_ACCESS_KEY_ID | AWS access key used for S3 and Rekognition. | true | `undefined`
+AWS_SECRET_ACCESS_KEY | AWS secret access key used for S3 and Rekognition. | true | `undefined`
+AWS_S3_BUCKET | The bucket to host the website files. | false | 'antifragile.systems'
+AWS_CLOUDFRONT_DISTRIBUTION_ID | The distribution ID to invalidate its cache. | true | `undefined`
 ENVIRONMENT | The environment the app is running on. | false | `production`
