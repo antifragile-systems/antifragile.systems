@@ -6,7 +6,7 @@
 
 > Antifragile Systems website
 
-<p align="center"><img src="share/github/overview.gif" width="720"></p>
+<p align="center"><img src="share/github/overview.png" width="720"></p>
 
 ### Features
 * Host files on a [AWS S3](https://aws.amazon.com/s3) bucket and deliver them :globe_with_meridians: worldwide through [AWS CloudFront](https://aws.amazon.com/cloudfront) :white_check_mark:
