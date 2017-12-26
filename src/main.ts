@@ -5,11 +5,18 @@
  * LICENSE.md file in the root directory of this source tree.
  */
 
+import { enableProdMode } from '@angular/core'
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic'
 
 import './assets/styles/main.scss'
 
 import { AppModule } from './app'
+
+const ENVIRONMENT = process.env.ENVIRONMENT
+
+if (ENVIRONMENT === 'production') {
+  enableProdMode()
+}
 
 export function bootstrap () {
   return platformBrowserDynamic()

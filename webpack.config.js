@@ -9,6 +9,7 @@ const CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ContextReplacementPlugin = require('webpack/lib/ContextReplacementPlugin')
 const NamedModulesPlugin = require('webpack/lib/NamedModulesPlugin')
+const EnvironmentPlugin = require('webpack/lib/EnvironmentPlugin')
 
 const { resolve } = require('path')
 
@@ -46,7 +47,10 @@ module.exports = {
       }
     }),
     new ContextReplacementPlugin(/angular(\\|\/)core(\\|\/)esm5/, resolve(__dirname, 'src'), {}),
-    new NamedModulesPlugin()
+    new NamedModulesPlugin(),
+    new EnvironmentPlugin({
+      ENVIRONMENT: 'production'
+    })
   ],
   node: {
     global: true,
