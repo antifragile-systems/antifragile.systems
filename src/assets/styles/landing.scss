@@ -1,5 +1,5 @@
 /*!
- * Copyright (c) 2017, Hugo Freire <hugo@antifragile.systems>.
+ * Copyright (c) 2018, Hugo Freire <hugo@antifragile.systems>.
  *
  * This source code is licensed under the license found in the
  * LICENSE.md file in the root directory of this source tree.
@@ -18,14 +18,17 @@
   text-align: center;
 
   #header {
+    nav {
+      display: flex;
+      justify-content: center;
+    }
+
     & a {
       text-decoration: none;
     }
 
     & .logo {
       display: flex;
-      align-items: center;
-      justify-content: center;
       margin-bottom: 60px;
       margin-left: 8%;
     }
@@ -42,7 +45,7 @@
 
     & .logo-text {
       line-height: 20px;
-      padding: 0px 10px 10px 1px;
+      padding: 2px 10px 10px 1px;
       color: white;
       font-weight: 600;
       text-transform: uppercase;
@@ -97,8 +100,11 @@
     text-align: inherit;
 
     #header {
+      nav {
+        justify-content: left;
+      }
+
       & .logo {
-        justify-content: inherit;
         margin-left: 4%;
         margin-bottom: 20px;
       }
