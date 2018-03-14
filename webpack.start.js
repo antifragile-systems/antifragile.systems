@@ -5,6 +5,8 @@
  * LICENSE.md file in the root directory of this source tree.
  */
 
+const WEBPACK_DEV_PORT = process.env.WEBPACK_DEV_PORT || 3000
+
 const webpackMerge = require('webpack-merge')
 
 const commonConfig = require('./webpack.config')
@@ -22,7 +24,7 @@ module.exports = webpackMerge(commonConfig, {
     ]
   },
   devServer: {
-    port: process.env.WEBPACK_DEV_PORT || 3000,
+    port: WEBPACK_DEV_PORT,
     host: '0.0.0.0',
     historyApiFallback: true,
     stats: 'minimal'

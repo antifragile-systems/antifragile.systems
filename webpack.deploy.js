@@ -5,6 +5,10 @@
  * LICENSE.md file in the root directory of this source tree.
  */
 
+const AWS_REGION = process.env.AWS_REGION
+const AWS_S3_BUCKET = process.env.AWS_S3_BUCKET || 'antifragile.systems'
+const AWS_CLOUDFRONT_DISTRIBUTION_ID = process.env.AWS_CLOUDFRONT_DISTRIBUTION_ID
+
 const webpackMerge = require('webpack-merge')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const S3Plugin = require('webpack-s3-plugin')
@@ -42,13 +46,13 @@ module.exports = webpackMerge(commonConfig, {
     }),
     new S3Plugin({
       s3Options: {
-        region: process.env.AWS_REGION
+        region: AWS_REGION
       },
       s3UploadOptions: {
-        Bucket: process.env.AWS_S3_BUCKET || 'antifragile.systems'
+        Bucket: AWS_S3_BUCKET
       },
       cloudfrontInvalidateOptions: {
-        DistributionId: process.env.AWS_CLOUDFRONT_DISTRIBUTION_ID,
+        DistributionId: AWS_CLOUDFRONT_DISTRIBUTION_ID,
         Items: [ '/*' ]
       }
     })

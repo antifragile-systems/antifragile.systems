@@ -5,6 +5,8 @@
  * LICENSE.md file in the root directory of this source tree.
  */
 
+const ENVIRONMENT = process.env.ENVIRONMENT || 'production'
+
 const CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ContextReplacementPlugin = require('webpack/lib/ContextReplacementPlugin')
@@ -18,7 +20,7 @@ module.exports = {
     polyfills: './src/polyfills.ts',
     main: './src/main.ts'
   },
-  output: {
+  output: {                                  
     filename: '[name].[chunkhash:8].js',
     path: resolve(__dirname, 'tmp')
   },
@@ -48,9 +50,7 @@ module.exports = {
     }),
     new ContextReplacementPlugin(/angular(\\|\/)core(\\|\/)esm5/, resolve(__dirname, 'src'), {}),
     new NamedModulesPlugin(),
-    new EnvironmentPlugin({
-      ENVIRONMENT: 'production'
-    })
+    new EnvironmentPlugin({ ENVIRONMENT })
   ],
   node: {
     global: true,
