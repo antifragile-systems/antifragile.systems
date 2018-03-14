@@ -113,7 +113,8 @@
       {
         "path": "@semantic-release/npm",
         "npmPublish": false
-      }
+      },
+      "@semantic-release/github"
     ]
   },
   "scripts": {
