@@ -110,10 +110,13 @@
     "lint": "./node_modules/.bin/tslint '{src,test}/**/*.ts'",
     "coverage": "node_modules/.bin/istanbul cover --include-all-sources --root src --print detail ./node_modules/mocha/bin/_mocha -- --recursive test",
     "test": "npm run clean && npm run lint && ./node_modules/.bin/mocha-webpack --webpack-config ./webpack.test.js --opts ./test/mocha.opts",
-    "compile": "npm run clean && ./node_modules/.bin/webpack -p",
+    "webpack": "./node_modules/.bin/webpack -p",
+    "webpack:start": "./node_modules/.bin/webpack-dev-server --config ./webpack.start.js --progress --hot --content-base src",
+    "webpack:deploy": "npm run webpack -- --config ./webpack.deploy.js",
+    "compile": "npm run clean && npm run webpack",
     "semantic-release": "./node_modules/.bin/semantic-release pre && node_modules/.bin/semantic-release post",
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
-    "start": "npm run clean && ./node_modules/.bin/webpack-dev-server --config ./webpack.start.js --progress --hot --content-base src",
-    "deploy": "npm run clean && npm run compile -- --config ./webpack.deploy.js"
+    "start": "npm run clean && npm run webpack:start",
+    "deploy": "npm run clean && npm run webpack:deploy"
   }
 }
