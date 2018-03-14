@@ -9,12 +9,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/antifragile-systems/web.git"
+    "url": "git+https://github.com/antifragile-systems/as-web.git"
   },
   "bugs": {
-    "url": "https://github.com/antifragile-systems/web/issues"
+    "url": "https://github.com/antifragile-systems/as-web/issues"
   },
-  "homepage": "https://github.com/antifragile-systems/web#readme",
+  "homepage": "https://github.com/antifragile-systems/as-web#readme",
   "dependencies": {
     "@angular/animations": "5.1.0",
     "@angular/cdk": "5.0.2",
@@ -91,7 +91,12 @@
       "@angular/router",
       "angular-in-memory-web-api",
       "angular2-moment",
-      "hammerjs"
+      "hammerjs",
+      "webpack",
+      "webpack-dev-server",
+      "webpack-merge",
+      "webpack-node-externals",
+      "webpack-s3-plugin"
     ]
   },
   "config": {
@@ -115,8 +120,8 @@
     "webpack:deploy": "npm run webpack -- --config ./webpack.deploy.js",
     "compile": "npm run clean && npm run webpack",
     "semantic-release": "./node_modules/.bin/semantic-release pre && node_modules/.bin/semantic-release post",
+    "deploy": "npm run clean && npm run webpack:deploy",
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
-    "start": "npm run clean && npm run webpack:start",
-    "deploy": "npm run clean && npm run webpack:deploy"
+    "start": "npm run clean && npm run webpack:start"
   }
 }
