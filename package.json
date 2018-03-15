@@ -1,5 +1,5 @@
 {
-  "name": "as-web",
+  "name": "antifragile.systems",
   "description": ":hatching_chick: Antifragile Systems :earth_africa: website",
   "version": "0.0.0",
   "engines": {
@@ -9,12 +9,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/antifragile-systems/as-web.git"
+    "url": "git+https://github.com/antifragile-systems/antifragile.systems.git"
   },
   "bugs": {
-    "url": "https://github.com/antifragile-systems/as-web/issues"
+    "url": "https://github.com/antifragile-systems/antifragile.systems/issues"
   },
-  "homepage": "https://github.com/antifragile-systems/as-web#readme",
+  "homepage": "https://github.com/antifragile-systems/antifragile.systems#readme",
   "dependencies": {
     "@angular/animations": "5.1.0",
     "@angular/cdk": "5.0.2",

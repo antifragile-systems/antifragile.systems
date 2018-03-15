@@ -1,8 +1,8 @@
 # :hatching_chick: Antifragile Systems :earth_africa: website
 
-[![Build Status](https://travis-ci.org/antifragile-systems/as-web.svg?branch=master)](https://travis-ci.org/antifragile-systems/as-web)
-[![Coverage Status](https://coveralls.io/repos/github/antifragile-systems/as-web/badge.svg?branch=master)](https://coveralls.io/github/antifragile-systems/as-web?branch=master)
-[![](https://img.shields.io/github/release/antifragile-systems/as-web.svg)](https://github.com/antifragile-systems/as-web/releases)
+[![Build Status](https://travis-ci.org/antifragile-systems/antifragile.systems.svg?branch=master)](https://travis-ci.org/antifragile-systems/antifragile.systems)
+[![Coverage Status](https://coveralls.io/repos/github/antifragile-systems/antifragile.systems/badge.svg?branch=master)](https://coveralls.io/github/antifragile-systems/antifragile.systems?branch=master)
+[![](https://img.shields.io/github/release/antifragile-systems/antifragile.systems.svg)](https://github.com/antifragile-systems/antifragile.systems/releases)
 
 > Antifragile Systems website
 
@@ -14,12 +14,12 @@
 ### How to develop
 Clone the GitHub repo
 ```
-git clone https://github.com/antifragile-systems/as-web.git
+git clone https://github.com/antifragile-systems/antifragile.systems.git
 ```
 
 Change current directory
 ```
-cd as-web
+cd antifragile.systems
 ```
 
 Run the NPM script that will deploy
@@ -36,12 +36,12 @@ ENVIRONMENT | The environment the app is running on. | false | `production`
 ### How to deploy
 Clone the GitHub repo
 ```
-git clone https://github.com/antifragile-systems/as-web.git
+git clone https://github.com/antifragile-systems/antifragile.systems.git
 ```
 
 Change current directory
 ```
-cd as-web
+cd antifragile.systems
 ```
 
 Run the NPM script that will deploy
