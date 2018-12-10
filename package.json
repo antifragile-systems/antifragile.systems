@@ -56,7 +56,7 @@
     "node-sass": "4.7.2",
     "null-loader": "0.1.1",
     "pre-git": "3.17.1",
-    "raw-loader": "0.5.1",
+    "raw-loader": "1.0.0",
     "sass-loader": "6.0.7",
     "semantic-release": "15.0.3",
     "style-loader": "0.20.3",
