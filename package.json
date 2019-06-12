@@ -16,7 +16,7 @@
   },
   "homepage": "https://github.com/antifragile-systems/antifragile.systems#readme",
   "dependencies": {
-    "@angular/animations": "5.1.0",
+    "@angular/animations": "8.0.0",
     "@angular/cdk": "5.0.2",
     "@angular/common": "5.1.0",
     "@angular/compiler": "5.1.0",
