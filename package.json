@@ -65,7 +65,7 @@
     "to-string-loader": "1.1.5",
     "ts-jest": "24.0.2",
     "ts-node": "5.0.1",
-    "tslint": "5.9.1",
+    "tslint": "5.17.0",
     "tslint-config-standard": "7.0.0",
     "typescript": "3.5.1",
     "webpack": "3.8.1",
