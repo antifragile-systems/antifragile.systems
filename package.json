@@ -64,7 +64,7 @@
     "testdouble-jest": "2.0.0",
     "to-string-loader": "1.1.6",
     "ts-jest": "24.3.0",
-    "ts-node": "8.8.1",
+    "ts-node": "8.8.2",
     "tslint": "5.20.1",
     "tslint-config-standard": "9.0.0",
     "typescript": "3.8.3",
