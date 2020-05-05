@@ -53,7 +53,7 @@
     "jest": "24.9.0",
     "jest-preset-angular": "8.0.0",
     "jsdom": "16.2.2",
-    "node-sass": "4.14.0",
+    "node-sass": "4.14.1",
     "null-loader": "4.0.0",
     "pre-git": "3.17.1",
     "raw-loader": "4.0.1",
