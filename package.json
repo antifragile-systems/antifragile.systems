@@ -71,7 +71,7 @@
     "webpack": "4.43.0",
     "webpack-dev-server": "3.11.0",
     "webpack-merge": "5.0.8",
-    "webpack-node-externals": "1.7.2",
+    "webpack-node-externals": "2.3.0",
     "webpack-s3-plugin": "1.0.3"
   },
   "greenkeeper": {
