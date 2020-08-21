@@ -30,7 +30,7 @@
     "hammerjs": "2.0.8",
     "ng-recaptcha": "5.0.0",
     "rxjs": "6.6.2",
-    "zone.js": "0.11.0"
+    "zone.js": "0.11.1"
   },
   "devDependencies": {
     "@angularclass/hmr": "2.1.3",
