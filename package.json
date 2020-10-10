@@ -54,7 +54,7 @@
     "jest-preset-angular": "8.0.0",
     "jsdom": "16.4.0",
     "node-sass": "4.14.1",
-    "null-loader": "4.0.0",
+    "null-loader": "4.0.1",
     "pre-git": "3.17.1",
     "raw-loader": "4.0.1",
     "sass-loader": "10.0.2",
