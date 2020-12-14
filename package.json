@@ -70,7 +70,7 @@
     "typescript": "3.9.7",
     "webpack": "4.44.2",
     "webpack-dev-server": "3.11.0",
-    "webpack-merge": "5.5.0",
+    "webpack-merge": "5.7.0",
     "webpack-node-externals": "2.5.2",
     "webpack-s3-plugin": "1.0.3"
   },
