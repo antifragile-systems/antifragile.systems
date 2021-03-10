@@ -38,7 +38,7 @@
     "@types/chai": "4.2.15",
     "@types/jest": "26.0.20",
     "@types/mocha": "8.2.1",
-    "@types/node": "14.14.32",
+    "@types/node": "14.14.33",
     "@types/webpack": "4.41.26",
     "angular2-template-loader": "0.6.2",
     "awesome-typescript-loader": "5.2.1",
