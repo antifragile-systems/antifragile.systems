@@ -35,7 +35,7 @@
   "devDependencies": {
     "@angularclass/hmr": "3.0.0",
     "@angularclass/hmr-loader": "3.0.4",
-    "@types/chai": "4.2.20",
+    "@types/chai": "4.2.21",
     "@types/jest": "26.0.24",
     "@types/mocha": "8.2.3",
     "@types/node": "16.0.1",
