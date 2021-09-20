@@ -58,7 +58,7 @@
     "pre-git": "3.17.1",
     "raw-loader": "4.0.2",
     "sass-loader": "10.1.1",
-    "semantic-release": "17.4.7",
+    "semantic-release": "18.0.0",
     "style-loader": "2.0.0",
     "testdouble": "3.16.2",
     "testdouble-jest": "2.0.0",
