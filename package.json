@@ -52,7 +52,7 @@
     "html-webpack-plugin": "4.5.2",
     "jest": "24.9.0",
     "jest-preset-angular": "8.0.0",
-    "jsdom": "17.0.0",
+    "jsdom": "18.0.0",
     "node-sass": "6.0.1",
     "null-loader": "4.0.1",
     "pre-git": "3.17.1",
