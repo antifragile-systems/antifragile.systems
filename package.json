@@ -60,7 +60,7 @@
     "sass-loader": "10.1.1",
     "semantic-release": "18.0.0",
     "style-loader": "2.0.0",
-    "testdouble": "3.16.2",
+    "testdouble": "3.16.3",
     "testdouble-jest": "2.0.0",
     "to-string-loader": "1.2.0",
     "ts-jest": "24.3.0",
