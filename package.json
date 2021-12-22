@@ -69,7 +69,7 @@
     "tslint-config-standard": "9.0.0",
     "typescript": "3.9.10",
     "webpack": "4.46.0",
-    "webpack-dev-server": "4.4.0",
+    "webpack-dev-server": "4.7.0",
     "webpack-merge": "5.8.0",
     "webpack-node-externals": "3.0.0",
     "webpack-s3-plugin": "1.0.3"
