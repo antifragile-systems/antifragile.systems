@@ -26,7 +26,7 @@
     "@angular/material": "9.2.0",
     "@angular/platform-browser": "9.1.0",
     "@angular/platform-browser-dynamic": "8.0.0",
-    "core-js": "3.19.0",
+    "core-js": "3.25.1",
     "hammerjs": "2.0.8",
     "ng-recaptcha": "6.1.0",
     "rxjs": "6.6.7",
